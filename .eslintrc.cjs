@@ -6,6 +6,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+    'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
@@ -16,5 +17,19 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+
+    // Special Prettier integration rules
+    curly: ['error', 'all'],
+    allowParens: 'off',
+    'no-confusing-arrow': ['error', { allowParens: false }],
+    quotes: [
+      'warn',
+      'single',
+      { avoidEscape: true, allowTemplateLiterals: false },
+    ],
+    'no-unused-vars': [
+      'warn',
+      { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
+    ],
   },
-}
+};
