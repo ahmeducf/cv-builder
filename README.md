@@ -1,8 +1,18 @@
-# React + Vite
+# CV Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple CV builder using React.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Vite: build tool chain
+- React
+- Vanilla CSS
+- ESLint: linting
+- Prettier: code formatting
+- commitlint: commit message linting
+- Husky & lint-staged: git commit hooks
+
+## Roadmap
+
+- [x] Break UI into components hierarchy
+- [ ] Build a static version of the UI
