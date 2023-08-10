@@ -11,6 +11,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -32,7 +37,7 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "npm run lint -- --fix",
+      "eslint --fix",
       "npx prettier --write"
     ],
     "*.{html,css,md}": "prettier --write"
