@@ -2,6 +2,7 @@ import Accordion from '../Accordion';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import ListItem from '../../common/ListItem';
 import FormsContainer from '../../common/FormsContainer';
+import './Education.css';
 
 function Education() {
   return (

@@ -1,0 +1,23 @@
+.controls__download-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #4d4d4d;
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.controls__download-btn:hover {
+  color: #000;
+}
+
+.controls__download-btn:focus {
+  border: 3px solid #3b83f6;
+  outline: none;
+  box-shadow: 0 3px 15px rgba(59, 131, 246, 0.2);
+}

@@ -2,6 +2,7 @@ import Accordion from '../Accordion';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import ListItem from '../../common/ListItem';
 import FormsContainer from '../../common/FormsContainer';
+import './Experience.css';
 
 function Experience() {
   return (

@@ -1,6 +1,7 @@
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import Accordion from '../Accordion';
 import PersonalDetailsForm from './PersonalDetailsForm';
+import './PersonalDetails.css';
 
 function PersonalDetails() {
   return (

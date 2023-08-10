@@ -1,0 +1,38 @@
+.accordion {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  padding: 24px 24px 16px 24px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.accordion__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.accordion__title svg {
+  width: 24px;
+  height: auto;
+  fill: #000;
+}
+
+.accordion__button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.accordion__button:focus {
+  border: 3px solid #3b83f6;
+  outline: none;
+  box-shadow: 0 3px 15px rgba(59, 131, 246, 0.2);
+}

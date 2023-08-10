@@ -1,0 +1,6 @@
+.personal-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 24px 24px 24px;
+}

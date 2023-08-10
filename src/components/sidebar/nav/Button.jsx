@@ -1,3 +1,5 @@
+import './Button.css';
+
 function Button({ children, active = false, onClick }) {
   return (
     <button

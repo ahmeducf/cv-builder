@@ -1,11 +1,8 @@
-import '../styles/App.css';
+import CvBuilder from './CvBuilder';
+import './App.css';
 
 function App() {
-  return (
-    <>
-      <div>Hello</div>
-    </>
-  );
+  return <CvBuilder />;
 }
 
 export default App;

@@ -1,0 +1,23 @@
+.controls__clear-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #b91c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.controls__clear-btn:hover {
+  color: #db1b1b;
+}
+
+.controls__clear-btn:focus {
+  border: 3px solid #3b83f6;
+  outline: none;
+  box-shadow: 0 3px 15px rgba(59, 131, 246, 0.2);
+}

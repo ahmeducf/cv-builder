@@ -1,3 +1,5 @@
+import './Input.css';
+
 function Input({ label, type }) {
   const inputId = label.toLowerCase().split(' ').join('-');
 

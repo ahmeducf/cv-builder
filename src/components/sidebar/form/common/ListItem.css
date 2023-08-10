@@ -1,0 +1,46 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.list-item span {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.list-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  transition: color 0.2s ease-in-out;
+}
+
+.list-item button:focus {
+  border: 3px solid #3b83f6;
+  box-shadow: 0 3px 15px rgba(59, 131, 246, 0.2);
+}
+
+.list-item__toggle-btn {
+  color: #4d4d4d;
+}
+
+.list-item__toggle-btn:hover {
+  color: #000;
+}
+
+.list-item__delete-btn {
+  color: #b91c1c;
+}
+
+.list-item__delete-btn:hover {
+  color: #db1b1b;
+}

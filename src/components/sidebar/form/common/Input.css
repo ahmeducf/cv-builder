@@ -1,0 +1,30 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-weight: 600;
+}
+
+.input-group input[type='text'],
+.input-group input[type='email'],
+.input-group input[type='tel'] {
+  background-color: var(--main-bg-color);
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.input-group input {
+  border: 3px solid transparent;
+  transition:
+    border 0.25s,
+    box-shadow 0.25s;
+}
+
+.input-group input:focus {
+  border-color: #3b83f6;
+  box-shadow: 0 3px 15px rgba(59, 131, 246, 0.2);
+  outline: none;
+}
