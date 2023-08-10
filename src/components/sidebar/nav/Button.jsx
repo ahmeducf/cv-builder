@@ -1,7 +1,7 @@
 function Button({ children, active = false, onClick }) {
   return (
     <button
-      className={`btn btn-nav ${active ? 'active' : ''}`}
+      className={`btn nav__btn ${active ? 'active' : ''}`}
       onClick={onClick}
     >
       {children}
