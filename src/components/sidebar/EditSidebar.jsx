@@ -1,14 +1,19 @@
+import { useState } from 'react';
 import Nav from './nav/Nav';
 import Controls from './controls/Controls';
 import Form from './form/Form';
 import './EditSidebar.css';
 
 function EditSidebar() {
+  const [activeNavButton, setActiveNavButton] = useState('content');
   return (
     <div className="edit-sidebar">
-      <Nav />
+      <Nav
+        activeButton={activeNavButton}
+        setActiveButton={setActiveNavButton}
+      />
       <Controls />
-      <Form />
+      <Form activeForm={activeNavButton} />
     </div>
   );
 }
