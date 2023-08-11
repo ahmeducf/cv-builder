@@ -15,4 +15,5 @@ A simple CV builder using React.
 ## Roadmap
 
 - [x] Break UI into components hierarchy
-- [ ] Build a static version of the UI
+- [x] Build a static version of the UI
+- [ ] Add state to the app
