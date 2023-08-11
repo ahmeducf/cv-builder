@@ -4,15 +4,17 @@
   align-items: center;
   gap: 8px;
   padding: 12px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
+  max-width: 94px;
   background-color: transparent;
   border: none;
   outline: none;
   border-radius: 8px;
   color: #4d4d4d;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .nav__btn:not(.active):hover {
@@ -26,4 +28,9 @@
 
 .nav__btn.active:hover {
   color: #116291;
+}
+
+.nav__btn:focus-visible {
+  border: 3px solid #3b83f6;
+  outline: none;
 }

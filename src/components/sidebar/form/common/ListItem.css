@@ -24,7 +24,7 @@
   transition: color 0.2s ease-in-out;
 }
 
-.list-item button:focus {
+.list-item button:focus-visible {
   border: 3px solid #3b83f6;
   box-shadow: 0 3px 15px rgba(59, 131, 246, 0.2);
 }

@@ -7,6 +7,6 @@ nav.edit-sidebar__nav {
   gap: 16px;
   background-color: #fff;
   border-radius: 12px;
-  padding: 14px 0;
+  padding: 14px 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }

@@ -16,7 +16,7 @@
   color: #000;
 }
 
-.controls__download-btn:focus {
+.controls__download-btn:focus-visible {
   border: 3px solid #3b83f6;
   outline: none;
   box-shadow: 0 3px 15px rgba(59, 131, 246, 0.2);
