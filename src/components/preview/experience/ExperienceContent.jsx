@@ -20,14 +20,13 @@ function ExperienceItem({ experience }) {
 
 function ExperienceContent({ cvData }) {
   const { experience } = cvData;
-  const experienceArray = Array.from(experience.values());
 
   return (
     <div className="experience-content">
-      {experienceArray.map(
-        (experience) =>
+      {[...experience].map(
+        ([id, experience]) =>
           experience.showInResume && (
-            <ExperienceItem key={experience.id} experience={experience} />
+            <ExperienceItem key={id} experience={experience} />
           ),
       )}
     </div>

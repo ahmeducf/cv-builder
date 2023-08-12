@@ -20,13 +20,12 @@ function EducationItem({ education }) {
 
 function EducationContent({ cvData }) {
   const { education } = cvData;
-  const educationArray = Array.from(education.values());
   return (
     <div className="education-content">
-      {educationArray.map(
-        (education) =>
+      {[...education].map(
+        ([id, education]) =>
           education.showInResume && (
-            <EducationItem key={education.id} education={education} />
+            <EducationItem key={id} education={education} />
           ),
       )}
     </div>

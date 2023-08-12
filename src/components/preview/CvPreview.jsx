@@ -4,9 +4,9 @@ import EducationContent from './education/EducationContent';
 import ExperienceContent from './experience/ExperienceContent';
 import './CvPreview.css';
 
-function CvPreview({ cvData }) {
+function CvPreview({ cvData, previewRef }) {
   return (
-    <div className="cv-preview-container">
+    <div className="cv-preview-container" ref={previewRef}>
       <div className="cv-preview">
         <CvHeader cvData={cvData} />
         <SectionHeader title="Education" />
