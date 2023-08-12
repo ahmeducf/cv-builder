@@ -1,0 +1,25 @@
+.delete-btn {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: start;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: bold;
+  color: var(--danger-color);
+  outline: 1px solid var(--danger-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: var(--danger-color);
+  color: #fff;
+}

@@ -38,9 +38,9 @@
 }
 
 .list-item__delete-btn {
-  color: #b91c1c;
+  color: var(--danger-color);
 }
 
 .list-item__delete-btn:hover {
-  color: #db1b1b;
+  color: var(--danger-color-hover);
 }

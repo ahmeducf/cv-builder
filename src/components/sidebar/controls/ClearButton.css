@@ -2,7 +2,7 @@
   background-color: transparent;
   border: none;
   outline: none;
-  color: #b91c1c;
+  color: var(--danger-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .controls__clear-btn:hover {
-  color: #db1b1b;
+  color: var(--danger-color-hover);
 }
 
 .controls__clear-btn:focus-visible {

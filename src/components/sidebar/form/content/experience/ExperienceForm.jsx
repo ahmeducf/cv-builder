@@ -1,5 +1,5 @@
 import Input from '../../common/Input';
-import AddButton from '../../common/AddButton';
+import SaveButton from '../../common/SaveButton';
 import CancelButton from '../../common/CancelButton';
 import DeleteButton from '../../common/DeleteButton';
 
@@ -12,7 +12,7 @@ function ExperienceForm() {
       <Input label="End Date" type="date" />
       <Input label="Description" type="textarea" />
 
-      <AddButton />
+      <SaveButton />
       <CancelButton />
       <DeleteButton />
     </form>

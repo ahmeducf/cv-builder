@@ -49,6 +49,8 @@
   --resume-font: 'NotoSans', sans-serif;
   --resume-header-text-color: #fff;
   --resume-section-header-bg-color: rgba(14, 55, 78, 0.07);
+  --danger-color: #d93025;
+  --danger-color-hover: #b8271f;
 }
 
 /* Global */

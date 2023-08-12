@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import './DeleteButton.css';
 
-function DeleteButton() {
+function DeleteButton({ onClick }) {
   return (
-    <button className="btn delete-btn">
+    <button type="button" className="btn delete-btn" onClick={onClick}>
       <FontAwesomeIcon icon={faTrash} />
       <span>Delete</span>
     </button>

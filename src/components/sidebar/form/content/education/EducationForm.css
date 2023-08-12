@@ -1,0 +1,27 @@
+.education-form {
+  height: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+  overflow: hidden;
+}
+
+.education-form.active {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 24px 24px 24px;
+  height: auto;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.education-form__buttons {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  margin-top: 16px;
+}

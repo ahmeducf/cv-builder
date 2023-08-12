@@ -6,13 +6,22 @@ function Input({ name, label, type, value, onChange }) {
   return (
     <div className="input-group">
       <label htmlFor={inputId}>{label}</label>
-      <input
-        type={type}
-        id={inputId}
-        name={name}
-        value={value}
-        onChange={onChange}
-      />
+      {type === 'textarea' ? (
+        <textarea
+          id={inputId}
+          name={name}
+          value={value}
+          onChange={onChange}
+        ></textarea>
+      ) : (
+        <input
+          type={type}
+          id={inputId}
+          name={name}
+          value={value}
+          onChange={onChange}
+        />
+      )}
     </div>
   );
 }

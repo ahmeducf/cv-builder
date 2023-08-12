@@ -1,0 +1,25 @@
+.cancel-btn {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: start;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  color: gray;
+  outline: 1px solid gray;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #eee;
+}
