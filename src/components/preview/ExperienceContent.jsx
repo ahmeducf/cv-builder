@@ -1,3 +1,5 @@
+import './ExperienceContent.css';
+
 function ExperienceContent() {
   return (
     <div className="experience-content">
@@ -8,6 +10,7 @@ function ExperienceContent() {
       <div className="experience-content__right">
         <div className="company">{'Company Name'}</div>
         <div className="position">{'Position'}</div>
+        <div className="description">{'Description'}</div>
       </div>
     </div>
   );

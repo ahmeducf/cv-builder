@@ -1,3 +1,5 @@
+import './EducationContent.css';
+
 function EducationContent() {
   return (
     <div className="education-content">
@@ -8,6 +10,7 @@ function EducationContent() {
       <div className="education-content__right">
         <div className="school">{'School Name'}</div>
         <div className="degree">{'Degree'}</div>
+        <div className="description">{'Description'}</div>
       </div>
     </div>
   );

@@ -1,0 +1,12 @@
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  background-color: var(--resume-section-header-bg-color);
+  color: var(--resume-accent);
+  padding: 5px 0;
+  margin: 0 64px;
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
