@@ -24,6 +24,7 @@ function PersonalDetailsForm({ active, cvData, setCvData }) {
         type="text"
         value={fullName}
         onChange={handleChange}
+        placeholder={'e.g. John Doe'}
       />
       <Input
         name="email"
@@ -31,6 +32,7 @@ function PersonalDetailsForm({ active, cvData, setCvData }) {
         type="text"
         value={email}
         onChange={handleChange}
+        placeholder={'e.g. johndoe@gmail.com'}
       />
       <Input
         name="phoneNumber"
@@ -38,6 +40,7 @@ function PersonalDetailsForm({ active, cvData, setCvData }) {
         type="tel"
         value={phoneNumber}
         onChange={handleChange}
+        placeholder={'e.g. 123-456-7890'}
       />
       <Input
         name="address"
@@ -45,6 +48,7 @@ function PersonalDetailsForm({ active, cvData, setCvData }) {
         type="text"
         value={address}
         onChange={handleChange}
+        placeholder={'e.g. 1234 Main St, San Francisco, CA 94123'}
       />
     </form>
   );

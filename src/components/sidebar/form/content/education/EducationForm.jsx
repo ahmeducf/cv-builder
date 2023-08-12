@@ -66,6 +66,7 @@ function EducationForm({
         type="text"
         value={school}
         onChange={handleChanges}
+        placeholder={'e.g. University of California, Berkeley'}
       />
       <Input
         name="degree"
@@ -73,6 +74,7 @@ function EducationForm({
         type="text"
         value={degree}
         onChange={handleChanges}
+        placeholder={'e.g. Bachelor of Science'}
       />
       <Input
         name="location"
@@ -80,6 +82,7 @@ function EducationForm({
         type="text"
         value={location}
         onChange={handleChanges}
+        placeholder={'e.g. Berkeley, CA'}
       />
       <Input
         name="startDate"
@@ -87,6 +90,7 @@ function EducationForm({
         type="text"
         value={startDate}
         onChange={handleChanges}
+        placeholder={'e.g. 08/2015'}
       />
       <Input
         name="endDate"
@@ -94,6 +98,7 @@ function EducationForm({
         type="text"
         value={endDate}
         onChange={handleChanges}
+        placeholder={'e.g. 05/2019'}
       />
       <Input
         name="description"
@@ -101,6 +106,9 @@ function EducationForm({
         type="textarea"
         value={description}
         onChange={handleChanges}
+        placeholder={
+          'e.g. Relevant coursework: Data Structures, Algorithms, Machine Learning, etc.'
+        }
       />
 
       <div className="education-form__buttons">

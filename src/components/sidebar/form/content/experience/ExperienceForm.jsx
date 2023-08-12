@@ -66,6 +66,7 @@ function ExperienceForm({
         type="text"
         value={company}
         onChange={handleChanges}
+        placeholder={'e.g. Google'}
       />
       <Input
         name="position"
@@ -73,6 +74,7 @@ function ExperienceForm({
         type="text"
         value={position}
         onChange={handleChanges}
+        placeholder={'e.g. Software Engineer'}
       />
       <Input
         name="location"
@@ -80,6 +82,7 @@ function ExperienceForm({
         type="text"
         value={location}
         onChange={handleChanges}
+        placeholder={'e.g. Mountain View, CA'}
       />
       <Input
         name="startDate"
@@ -87,6 +90,7 @@ function ExperienceForm({
         type="text"
         value={startDate}
         onChange={handleChanges}
+        placeholder={'e.g. January 2019'}
       />
       <Input
         name="endDate"
@@ -94,6 +98,7 @@ function ExperienceForm({
         type="text"
         value={endDate}
         onChange={handleChanges}
+        placeholder={'e.g. Present'}
       />
       <Input
         name="description"
@@ -101,6 +106,7 @@ function ExperienceForm({
         type="textarea"
         value={description}
         onChange={handleChanges}
+        placeholder={'e.g. I did a lot of things...'}
       />
 
       <div className="experience-form__buttons">

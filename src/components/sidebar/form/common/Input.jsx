@@ -1,6 +1,6 @@
 import './Input.css';
 
-function Input({ name, label, type, value, onChange }) {
+function Input({ name, label, type, placeholder, value, onChange }) {
   const inputId = label.toLowerCase().split(' ').join('-');
 
   return (
@@ -12,6 +12,7 @@ function Input({ name, label, type, value, onChange }) {
           name={name}
           value={value}
           onChange={onChange}
+          placeholder={placeholder}
         ></textarea>
       ) : (
         <input
@@ -20,6 +21,7 @@ function Input({ name, label, type, value, onChange }) {
           name={name}
           value={value}
           onChange={onChange}
+          placeholder={placeholder}
         />
       )}
     </div>
