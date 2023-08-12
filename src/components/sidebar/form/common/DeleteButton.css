@@ -23,3 +23,8 @@
   background-color: var(--danger-color);
   color: #fff;
 }
+
+.delete-btn:focus-visible {
+  border: 3px solid var(--danger-color);
+  box-shadow: 0 3px 15px rgba(255, 0, 0, 0.2);
+}

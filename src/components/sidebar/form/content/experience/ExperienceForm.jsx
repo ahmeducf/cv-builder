@@ -84,14 +84,14 @@ function ExperienceForm({
       <Input
         name="startDate"
         label="Start Date"
-        type="date"
+        type="text"
         value={startDate}
         onChange={handleChanges}
       />
       <Input
         name="endDate"
         label="End Date"
-        type="date"
+        type="text"
         value={endDate}
         onChange={handleChanges}
       />

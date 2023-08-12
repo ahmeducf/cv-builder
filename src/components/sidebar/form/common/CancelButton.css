@@ -23,3 +23,8 @@
 .cancel-btn:hover {
   background-color: #eee;
 }
+
+.cancel-btn:focus-visible {
+  border: 3px solid #3b83f6;
+  box-shadow: 0 3px 15px rgba(59, 131, 246, 0.2);
+}

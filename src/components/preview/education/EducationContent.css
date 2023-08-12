@@ -1,0 +1,27 @@
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 64px;
+}
+
+.education-content__item {
+  display: flex;
+  gap: 36px;
+}
+
+.education-content__item__left,
+.education-content__item__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.education-content__item__left {
+  width: 160px;
+}
+
+.education-content__item__right .school {
+  font-weight: 700;
+}

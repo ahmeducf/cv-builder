@@ -1,0 +1,27 @@
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 64px;
+}
+
+.experience-content__item {
+  display: flex;
+  gap: 36px;
+}
+
+.experience-content__item__left,
+.experience-content__item__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.experience-content__item__left {
+  width: 150px;
+}
+
+.experience-content__item__right .company {
+  font-weight: 700;
+}
