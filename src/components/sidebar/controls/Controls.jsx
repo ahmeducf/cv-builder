@@ -2,10 +2,10 @@ import ClearButton from './ClearButton';
 import DownloadButton from './DownloadButton';
 import './Controls.css';
 
-function Controls() {
+function Controls({ cvData, setCvData }) {
   return (
     <section className="edit-sidebar__controls">
-      <ClearButton />
+      <ClearButton setCvData={setCvData} />
       <DownloadButton />
     </section>
   );
