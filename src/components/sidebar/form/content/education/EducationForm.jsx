@@ -106,7 +106,7 @@ function EducationForm({
       <div className="education-form__buttons">
         <SaveButton onClick={handleAddBtnClick} />
         <CancelButton onClick={handleCancelBtnClick} />
-        <DeleteButton onClick={handleDeleteBtnClick} />
+        {id && <DeleteButton onClick={handleDeleteBtnClick} />}
       </div>
     </form>
   );

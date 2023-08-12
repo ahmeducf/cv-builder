@@ -6,18 +6,25 @@ function ListItem({
   id,
   title,
   showInResume = true,
-  setIsEducationForm,
-  setEducationFormValues,
+  setIsForm,
+  setFormValues,
   cvData,
   setCvData,
+  section,
 }) {
   const handleToggleBtnClick = (e) => {
     e.stopPropagation();
 
     const newCvData = { ...cvData };
 
-    const showInResume = !newCvData.education.get(id).showInResume;
-    newCvData.education.get(id).showInResume = showInResume;
+    if (section === 'experience') {
+      const experience = newCvData.experience.get(id);
+      experience.showInResume = !experience.showInResume;
+    } else if (section === 'education') {
+      const education = newCvData.education.get(id);
+      education.showInResume = !education.showInResume;
+    }
+
     setCvData(newCvData);
   };
 
@@ -25,24 +32,33 @@ function ListItem({
     e.stopPropagation();
 
     const newCvData = { ...cvData };
-    newCvData.education.delete(id);
+
+    if (section === 'experience') {
+      newCvData.experience.delete(id);
+    } else if (section === 'education') {
+      newCvData.education.delete(id);
+    }
+
     setCvData(newCvData);
   };
 
   const handleListItemClick = (e) => {
     e.stopPropagation();
-    setIsEducationForm(true);
+    setIsForm(true);
 
-    const education = cvData.education.get(id);
-    setEducationFormValues({
-      id,
-      school: education.school,
-      degree: education.degree,
-      startDate: education.startDate,
-      endDate: education.endDate,
-      location: education.location,
-      description: education.description,
-    });
+    const newCvData = { ...cvData };
+
+    if (section === 'experience') {
+      const experience = newCvData.experience.get(id);
+      experience.id = id;
+      setFormValues(experience);
+    } else if (section === 'education') {
+      const education = newCvData.education.get(id);
+      education.id = id;
+      setFormValues(education);
+    }
+
+    setCvData(newCvData);
   };
 
   return (

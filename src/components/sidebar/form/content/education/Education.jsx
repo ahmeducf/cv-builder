@@ -46,8 +46,8 @@ function Education({ activeAccordion, setActiveAccordion, cvData, setCvData }) {
         <FormsContainer
           section="Education"
           active={active}
-          setIsEducationForm={setIsEducationForm}
-          setEducationFormValues={setEducationFormValues}
+          setIsForm={setIsEducationForm}
+          setFormValues={setEducationFormValues}
         >
           {[...educationMap].map(([id, education]) => {
             return (
@@ -56,10 +56,11 @@ function Education({ activeAccordion, setActiveAccordion, cvData, setCvData }) {
                 id={id}
                 title={education.school}
                 showInResume={education.showInResume}
-                setIsEducationForm={setIsEducationForm}
-                setEducationFormValues={setEducationFormValues}
+                setIsForm={setIsEducationForm}
+                setFormValues={setEducationFormValues}
                 cvData={cvData}
                 setCvData={setCvData}
+                section="education"
               />
             );
           })}

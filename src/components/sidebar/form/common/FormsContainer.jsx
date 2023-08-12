@@ -6,19 +6,32 @@ function FormsContainer({
   children,
   section,
   active,
-  setIsEducationForm,
-  setEducationFormValues,
+  setIsForm,
+  setFormValues,
 }) {
   const handleAddBtnClick = () => {
-    setIsEducationForm(true);
-    setEducationFormValues({
-      id: '',
-      school: '',
-      degree: '',
-      startDate: '',
-      endDate: '',
-      location: '',
-    });
+    setIsForm(true);
+    if (section === 'Education') {
+      setFormValues({
+        id: '',
+        school: '',
+        degree: '',
+        startDate: '',
+        endDate: '',
+        location: '',
+        description: '',
+      });
+    } else if (section === 'Experience') {
+      setFormValues({
+        id: '',
+        company: '',
+        position: '',
+        startDate: '',
+        endDate: '',
+        location: '',
+        description: '',
+      });
+    }
   };
 
   return (
