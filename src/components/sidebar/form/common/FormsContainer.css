@@ -1,7 +1,21 @@
 .forms-container {
+  height: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+  overflow: hidden;
+}
+
+.forms-container.active {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  height: auto;
+  opacity: 1;
+  transform: scaleY(1);
 }
 
 .forms-container__add-button {

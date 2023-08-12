@@ -4,7 +4,7 @@ import Controls from './controls/Controls';
 import Form from './form/Form';
 import './EditSidebar.css';
 
-function EditSidebar() {
+function EditSidebar({ cvData, setCvData }) {
   const [activeNavButton, setActiveNavButton] = useState('content');
   return (
     <div className="edit-sidebar">
@@ -12,8 +12,12 @@ function EditSidebar() {
         activeButton={activeNavButton}
         setActiveButton={setActiveNavButton}
       />
-      <Controls />
-      <Form activeForm={activeNavButton} />
+      <Controls cvData={cvData} setCvData={setCvData} />
+      <Form
+        activeForm={activeNavButton}
+        cvData={cvData}
+        setCvData={setCvData}
+      />
     </div>
   );
 }

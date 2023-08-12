@@ -6,16 +6,19 @@ import {
 import ContactInfoList from './ContactInfoList';
 import ContactInfoItem from './ContactInfoItem';
 
-function HeaderSection() {
+function HeaderSection({ cvData }) {
+  const { personalDetails } = cvData;
+  const { fullName, email, phoneNumber, address } = personalDetails;
+
   return (
     <section className="header">
       <div className="full-name">
-        <h1>John Doe</h1>
+        <h1>{fullName}</h1>
       </div>
       <ContactInfoList>
-        <ContactInfoItem icon={faEnvelope} text="email@email.com" />
-        <ContactInfoItem icon={faPhone} text="+1 234 567 890" />
-        <ContactInfoItem icon={faMapMarkerAlt} text="City, Country" />
+        {email && <ContactInfoItem icon={faEnvelope} text={email} />}
+        {phoneNumber && <ContactInfoItem icon={faPhone} text={phoneNumber} />}
+        {address && <ContactInfoItem icon={faMapMarkerAlt} text={address} />}
       </ContactInfoList>
     </section>
   );

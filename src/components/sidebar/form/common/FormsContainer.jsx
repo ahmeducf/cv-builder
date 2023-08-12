@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import './FormsContainer.css';
 
-function FormsContainer({ children, section }) {
+function FormsContainer({ children, section, active }) {
   return (
-    <div className="forms-container">
+    <div className={`forms-container ${active ? 'active' : ''}`}>
       <ul className={`forms-container__${section.toLowerCase()}s}-list`}>
         {children}
       </ul>
