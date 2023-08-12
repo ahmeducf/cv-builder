@@ -5,6 +5,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import ContactInfoList from './ContactInfoList';
 import ContactInfoItem from './ContactInfoItem';
+import './CvHeader.css';
 
 function HeaderSection({ cvData }) {
   const { personalDetails } = cvData;

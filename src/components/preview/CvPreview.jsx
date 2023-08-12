@@ -2,6 +2,7 @@ import SectionHeader from './SectionHeader';
 import CvHeader from './header/CvHeader';
 import EducationContent from './EducationContent';
 import ExperienceContent from './ExperienceContent';
+import './CvPreview.css';
 
 function CvPreview({ cvData }) {
   return (

@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 24px;
+  background-color: var(--resume-accent);
+  color: var(--resume-header-text-color);
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.header .full-name h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}

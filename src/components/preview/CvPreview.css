@@ -1,0 +1,11 @@
+.cv-preview {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow:
+    0 13px 27px -5px rgba(50, 50, 93, 0.1),
+    0 8px 16px -8px rgba(0, 0, 0, 0.25);
+  min-width: 21cm;
+  min-height: 29.7cm;
+  font-family: var(--resume-font);
+}
