@@ -16,4 +16,4 @@ A simple CV builder using React.
 
 - [x] Break UI into components hierarchy
 - [x] Build a static version of the UI
-- [ ] Add state to the app
+- [x] Add state to the app
