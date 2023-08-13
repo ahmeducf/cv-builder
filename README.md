@@ -23,6 +23,8 @@ A simple CV builder using React.
 
 ## Live Deployments
 
+Try the app on one of the following URLs:
+
 - [Vercel](https://cv-builder-salah.vercel.app/)
 - [Netlify](https://cv-builder-salah.netlify.app/)
 - [Cloudflare Pages](https://cv-builder.pages.dev/)
