@@ -12,6 +12,14 @@ A simple CV builder using React.
 - commitlint: commit message linting
 - Husky & lint-staged: git commit hooks
 
+## Live Deployments
+
+- [Vercel](https://cv-builder-salah.vercel.app/)
+- [Netlify](https://cv-builder-salah.netlify.app/)
+- [Cloudflare Pages](https://cv-builder.pages.dev/)
+- [GitHub Pages](https://ahmeducf.github.io/cv-builder/)
+- [Firebase Hosting](https://cv-builder-salah.web.app/)
+
 ## Roadmap
 
 - [x] Break UI into components hierarchy
