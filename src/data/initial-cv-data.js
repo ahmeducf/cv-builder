@@ -13,7 +13,7 @@ const initialCVData = {
       {
         school: 'Mansoura University',
         degree: 'Bachelor of Engineering',
-        startDate: '2018-09-01',
+        startDate: '2018/09',
         endDate: 'Present',
         location: 'Mansoura, Egypt',
         description: 'I studied Computer and Systems Engineering',
