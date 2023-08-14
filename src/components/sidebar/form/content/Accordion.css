@@ -41,3 +41,13 @@
   outline: none;
   box-shadow: 0 3px 15px rgba(59, 131, 246, 0.2);
 }
+
+@media (max-width: 1024px) {
+  .accordion__title svg {
+    width: 20px;
+  }
+
+  .accordion__button {
+    font-size: 16px;
+  }
+}
