@@ -10,3 +10,11 @@
   margin-bottom: 16px;
   margin-top: 40px;
 }
+
+@media (max-width: 1024px) {
+  .section-header {
+    margin: 0 24px;
+    margin-bottom: 16px;
+    margin-top: 40px;
+  }
+}
