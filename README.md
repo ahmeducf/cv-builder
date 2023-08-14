@@ -25,11 +25,10 @@ A simple CV builder using React.
 
 Try the app on one of the following URLs:
 
-- [Vercel](https://cv-builder-salah.vercel.app/)
-- [Netlify](https://cv-builder-salah.netlify.app/)
-- [Cloudflare Pages](https://cv-builder.pages.dev/)
 - [GitHub Pages](https://ahmeducf.github.io/cv-builder/)
 - [Firebase Hosting](https://cv-builder-salah.web.app/)
+- [Vercel](https://cv-builder-salah.vercel.app/)
+- [Netlify](https://cv-builder-salah.netlify.app/)
 
 ## Local Setup
 
@@ -39,13 +38,19 @@ Try the app on one of the following URLs:
 git clone git@github.com:ahmeducf/cv-builder.git
 ```
 
-2. Install dependencies
+2. Navigate to the project directory
+
+```bash
+cd cv-builder
+```
+
+3. Install dependencies
 
 ```bash
 npm install
 ```
 
-3. Start the development server
+4. Start the development server
 
 ```bash
 npm run dev
@@ -59,10 +64,10 @@ The app should be running on `http://localhost:5173/cv-builder/`.
 - [x] Build a static version of the UI
 - [x] Add state to the app
 - [x] Add interactivity to the app
+- [x] Make the app responsive
 
 ## If I have free time I will
 
-- [ ] Make the app responsive
 - [ ] Improve Accessibility
 - [ ] Add more fields to the CV
 - [ ] Add more themes and customizations
