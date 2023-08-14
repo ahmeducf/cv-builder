@@ -10,3 +10,13 @@ nav.edit-sidebar__nav {
   padding: 14px 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
+
+@media (max-width: 1024px) {
+  nav.edit-sidebar__nav {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+}
