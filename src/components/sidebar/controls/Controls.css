@@ -11,3 +11,9 @@
   border-radius: 12px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
+
+@media (max-width: 1024px) {
+  .edit-sidebar__controls {
+    grid-column: 1 / -1;
+  }
+}
