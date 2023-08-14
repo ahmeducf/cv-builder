@@ -3,3 +3,11 @@
   gap: 24px;
   padding: 32px;
 }
+
+@media (max-width: 500px) {
+  #root {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+}
