@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/cv-builder',
   build: {
     rollupOptions: {
       output: {
@@ -21,5 +22,9 @@ export default defineConfig({
       },
     },
   },
-  base: '/cv-builder',
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './tests/setup.js',
+  },
 });
