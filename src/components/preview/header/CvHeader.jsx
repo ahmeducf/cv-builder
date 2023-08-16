@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   faEnvelope,
   faPhone,
@@ -24,5 +25,20 @@ function HeaderSection({ cvData }) {
     </section>
   );
 }
+
+HeaderSection.propTypes = {
+  cvData: PropTypes.exact({
+    personalDetails: PropTypes.exact({
+      fullName: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      phoneNumber: PropTypes.string.isRequired,
+      address: PropTypes.string.isRequired,
+    }).isRequired,
+    education: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+    experience: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+  }).isRequired,
+};
 
 export default HeaderSection;

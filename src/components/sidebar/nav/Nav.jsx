@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileLines } from '@fortawesome/free-regular-svg-icons';
 import { faPenRuler } from '@fortawesome/free-solid-svg-icons';
@@ -26,5 +27,10 @@ function Nav({ activeButton, setActiveButton }) {
     </nav>
   );
 }
+
+Nav.propTypes = {
+  activeButton: PropTypes.string.isRequired,
+  setActiveButton: PropTypes.func.isRequired,
+};
 
 export default Nav;

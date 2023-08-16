@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import jsPDF from 'jspdf';
 import * as htmlToImage from 'html-to-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,5 +29,9 @@ function DownloadButton({ previewRef }) {
     </button>
   );
 }
+
+DownloadButton.propTypes = {
+  previewRef: PropTypes.object.isRequired,
+};
 
 export default DownloadButton;

@@ -21,7 +21,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'react/prop-types': 'off',
 
     // Special Prettier integration rules
     curly: ['error', 'all'],

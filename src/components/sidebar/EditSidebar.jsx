@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Nav from './nav/Nav';
 import Controls from './controls/Controls';
 import Form from './form/Form';
@@ -21,5 +22,26 @@ function EditSidebar({ cvData, setCvData, previewRef }) {
     </div>
   );
 }
+
+EditSidebar.propTypes = {
+  cvData: PropTypes.exact({
+    personalDetails: PropTypes.exact({
+      fullName: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      phoneNumber: PropTypes.string.isRequired,
+      address: PropTypes.string.isRequired,
+    }).isRequired,
+
+    education: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+
+    experience: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+  }).isRequired,
+
+  setCvData: PropTypes.func.isRequired,
+
+  previewRef: PropTypes.object.isRequired,
+};
 
 export default EditSidebar;
