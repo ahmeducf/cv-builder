@@ -4,6 +4,14 @@
   padding: 32px;
 }
 
+@media (max-width: 1000px) {
+  #root {
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 90px;
+  }
+}
+
 @media (max-width: 500px) {
   #root {
     flex-direction: column;

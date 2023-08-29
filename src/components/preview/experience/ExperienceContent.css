@@ -18,6 +18,10 @@
   flex-wrap: wrap;
 }
 
+.experience-content__item__right {
+  width: 300px;
+}
+
 .experience-content__item__left {
   width: 160px;
 }

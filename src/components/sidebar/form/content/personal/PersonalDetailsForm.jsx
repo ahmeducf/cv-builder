@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Input from '../../common/Input';
 import './PersonalDetailsForm.css';
 
@@ -53,5 +54,22 @@ function PersonalDetailsForm({ active, cvData, setCvData }) {
     </form>
   );
 }
+
+PersonalDetailsForm.propTypes = {
+  active: PropTypes.bool.isRequired,
+  cvData: PropTypes.exact({
+    personalDetails: PropTypes.exact({
+      fullName: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      phoneNumber: PropTypes.string.isRequired,
+      address: PropTypes.string.isRequired,
+    }).isRequired,
+    education: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+    experience: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+  }).isRequired,
+  setCvData: PropTypes.func.isRequired,
+};
 
 export default PersonalDetailsForm;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Button.css';
 
 function Button({ children, active = false, onClick }) {
@@ -10,5 +11,11 @@ function Button({ children, active = false, onClick }) {
     </button>
   );
 }
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  active: PropTypes.bool,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Button;

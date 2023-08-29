@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 import Input from '../../common/Input';
 import SaveButton from '../../common/SaveButton';
@@ -117,5 +118,33 @@ function ExperienceForm({
     </form>
   );
 }
+
+ExperienceForm.propTypes = {
+  active: PropTypes.bool.isRequired,
+  setIsExperienceForm: PropTypes.func.isRequired,
+  cvData: PropTypes.exact({
+    personalDetails: PropTypes.exact({
+      fullName: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      phoneNumber: PropTypes.string.isRequired,
+      address: PropTypes.string.isRequired,
+    }).isRequired,
+    education: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+    experience: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+  }).isRequired,
+  setCvData: PropTypes.func.isRequired,
+  experienceFormValues: PropTypes.exact({
+    id: PropTypes.string,
+    company: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    startDate: PropTypes.string.isRequired,
+    endDate: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+  setExperienceFormValues: PropTypes.func.isRequired,
+};
 
 export default ExperienceForm;

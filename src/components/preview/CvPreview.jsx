@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import SectionHeader from './SectionHeader';
 import CvHeader from './header/CvHeader';
 import EducationContent from './education/EducationContent';
@@ -17,5 +18,21 @@ function CvPreview({ cvData, previewRef }) {
     </div>
   );
 }
+
+CvPreview.propTypes = {
+  cvData: PropTypes.exact({
+    personalDetails: PropTypes.exact({
+      fullName: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      phoneNumber: PropTypes.string.isRequired,
+      address: PropTypes.string.isRequired,
+    }).isRequired,
+    education: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+    experience: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+  }).isRequired,
+  previewRef: PropTypes.object.isRequired,
+};
 
 export default CvPreview;
