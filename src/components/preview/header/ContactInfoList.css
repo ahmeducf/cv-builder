@@ -5,4 +5,5 @@
   flex-wrap: wrap;
   gap: 18px;
   margin-top: 18px;
+  word-break: break-word;
 }

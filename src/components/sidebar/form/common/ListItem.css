@@ -4,6 +4,7 @@
   gap: 20px;
   padding: 12px 24px;
   cursor: pointer;
+  word-break: break-word;
 }
 
 .list-item span {
