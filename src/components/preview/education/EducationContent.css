@@ -22,6 +22,10 @@
   width: 160px;
 }
 
+.education-content__item__right {
+  width: 300px;
+}
+
 .education-content__item__right .school {
   font-weight: 700;
 }
