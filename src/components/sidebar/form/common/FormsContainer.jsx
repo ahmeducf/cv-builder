@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import './FormsContainer.css';
@@ -50,5 +51,13 @@ function FormsContainer({
     </div>
   );
 }
+
+FormsContainer.propTypes = {
+  children: PropTypes.array.isRequired,
+  section: PropTypes.string.isRequired,
+  active: PropTypes.bool.isRequired,
+  setIsForm: PropTypes.func.isRequired,
+  setFormValues: PropTypes.func.isRequired,
+};
 
 export default FormsContainer;

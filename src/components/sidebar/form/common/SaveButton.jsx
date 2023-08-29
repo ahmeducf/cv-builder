@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './SaveButton.css';
 
 function SaveButton({ onClick }) {
@@ -7,5 +8,9 @@ function SaveButton({ onClick }) {
     </button>
   );
 }
+
+SaveButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default SaveButton;

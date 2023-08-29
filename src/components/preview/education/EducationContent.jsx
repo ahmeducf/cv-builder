@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './EducationContent.css';
 
 function EducationItem({ education }) {
@@ -18,6 +19,18 @@ function EducationItem({ education }) {
   );
 }
 
+EducationItem.propTypes = {
+  education: PropTypes.exact({
+    school: PropTypes.string.isRequired,
+    degree: PropTypes.string.isRequired,
+    startDate: PropTypes.string.isRequired,
+    endDate: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    showInResume: PropTypes.bool.isRequired,
+  }).isRequired,
+};
+
 function EducationContent({ cvData }) {
   const { education } = cvData;
   return (
@@ -31,5 +44,20 @@ function EducationContent({ cvData }) {
     </div>
   );
 }
+
+EducationContent.propTypes = {
+  cvData: PropTypes.exact({
+    personalDetails: PropTypes.exact({
+      fullName: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      phoneNumber: PropTypes.string.isRequired,
+      address: PropTypes.string.isRequired,
+    }).isRequired,
+    education: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+    experience: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+  }).isRequired,
+};
 
 export default EducationContent;

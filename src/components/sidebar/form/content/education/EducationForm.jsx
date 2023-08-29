@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 import Input from '../../common/Input';
 import SaveButton from '../../common/SaveButton';
@@ -119,5 +120,33 @@ function EducationForm({
     </form>
   );
 }
+
+EducationForm.propTypes = {
+  active: PropTypes.bool.isRequired,
+  setIsEducationForm: PropTypes.func.isRequired,
+  cvData: PropTypes.exact({
+    personalDetails: PropTypes.exact({
+      fullName: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      phoneNumber: PropTypes.string.isRequired,
+      address: PropTypes.string.isRequired,
+    }).isRequired,
+    education: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+    experience: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+  }).isRequired,
+  setCvData: PropTypes.func.isRequired,
+  educationFormValues: PropTypes.exact({
+    id: PropTypes.string,
+    school: PropTypes.string.isRequired,
+    degree: PropTypes.string.isRequired,
+    startDate: PropTypes.string.isRequired,
+    endDate: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+  setEducationFormValues: PropTypes.func.isRequired,
+};
 
 export default EducationForm;
