@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import Accordion from '../Accordion';
 import PersonalDetailsForm from './PersonalDetailsForm';
@@ -30,5 +31,23 @@ function PersonalDetails({
     </section>
   );
 }
+
+PersonalDetails.propTypes = {
+  activeAccordion: PropTypes.string.isRequired,
+  setActiveAccordion: PropTypes.func.isRequired,
+  cvData: PropTypes.exact({
+    personalDetails: PropTypes.exact({
+      fullName: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      phoneNumber: PropTypes.string.isRequired,
+      address: PropTypes.string.isRequired,
+    }).isRequired,
+    education: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+    experience: PropTypes.objectOf(PropTypes.instanceOf(Map).isRequired)
+      .isRequired,
+  }).isRequired,
+  setCvData: PropTypes.func.isRequired,
+};
 
 export default PersonalDetails;

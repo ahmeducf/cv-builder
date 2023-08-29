@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './CancelButton.css';
 
 function CancelButton({ onClick }) {
@@ -7,5 +8,9 @@ function CancelButton({ onClick }) {
     </button>
   );
 }
+
+CancelButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default CancelButton;
