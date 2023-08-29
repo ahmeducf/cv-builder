@@ -8,6 +8,7 @@
 .education-content__item {
   display: flex;
   gap: 36px;
+  word-break: break-word;
 }
 
 .education-content__item__left,
