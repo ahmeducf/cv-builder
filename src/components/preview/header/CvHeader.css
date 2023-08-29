@@ -12,4 +12,6 @@
 .header .full-name h1 {
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
+  word-break: break-word;
 }
